@@ -1,43 +1,31 @@
-import Banner from "../../assents/Login.png";
-import "./Login.css";
-import Botao from "../../components/botao/Botao";
+import "./Login.css"
 import Logo from "../../assents/img/logo.png";
+import Logo_banner from "../../assents/Login.png";
+import Botao from "../../components/botao/Botao";
 
 const Login = () => {
     return (
         <main className="main_login">
-            <div className="banner_login">
-                <img src={Banner} alt="" />
-
+            <div className="logo_banner">
+                <img src={Logo_banner} alt="" />
             </div>
             <section className="section_login">
-
-                <div className="logo_login">
-                    <img src={Logo} alt="Logo do event+" />
-                </div>
-
+                <img src={Logo} alt="" />
                 <form action="" className="form_login">
-
                     <div className="campos_login">
-
                         <div className="campo_input">
-                            <input type="nome" name="nome" placeholder="Username" />
+                            <input type="text" name="Usuario" placeholder="Username" />
                         </div>
-
                         <div className="campo_input">
-                            <input type="nome" name="nome" placeholder="Password" />
+                            <input type="password" name="senha" placeholder="Password" />
                         </div>
                     </div>
-
-                    <div className="esqueceu_Senha">
-                    <a href="">Esqueceu a senha?</a>
-                    </div>
+                        <a href="">Esqueceu sua senha?</a>
                     <Botao nomeDoBotao="Login" />
                 </form>
-
             </section>
         </main>
-    );
-};
+    )
+}
 
 export default Login;

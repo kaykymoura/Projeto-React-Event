@@ -2,20 +2,20 @@ import Cadastro from "../../components/cadastro/Cadastro"
 import Lista from "../../components/lista/Lista"
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
-import Banner from "../../assents/img/ImagemUsuario.png"
+import Banner from "../../assents/img/BannerCadastro.png"
 
 const CadastrarTipoDeUsuario = () => {
     return (
         <>
             <Header />
             <Cadastro
-                titulo="Cadastrar Tipo de Usuario"
+                titulo="Cadastro de evento"
                 visibilidade="none"
                 Imagem={Banner}
             />
             <Lista 
-            titulo="Lista Tipo de Usuario"
-            tdnome="Tipo de Usuario"
+            titulo="Lista de Eventos"
+            tdnome="Nome Evento"
             />
             <Footer />
             

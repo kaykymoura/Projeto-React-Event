@@ -1,92 +1,82 @@
-.main_login {
+.main_login{
     display: flex;
-    height: 100%;
-    color: white;
+    height: 100vh;
+    background-color: #B51D44;
 }
 
-.section_login {
-    width: 50%;
-    height: 100vh;
+.logo_banner{
+
+    flex: 1;
+
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_banner img{
+    width: 470px;
+}
+
+
+ .section_login{
+    flex: 1;
     background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+ }
 
-.banner_login {
-    background-color: #B51D44;
+ .form_login{
+    color: white;
+
     width: 50%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-.main_login img {
-    width: 350px;
-    
-}
-
-.form_login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 100px;
     height: 50%;
-    width: 70%;
 
-}
-
-.campo_input{
     display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-bottom: 55px;
-  
 }
 
 .campos_login{
     width: 100%;
-     
+}
+
+
+.campo_input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
 }
 
 .campo_input input{
-    color: #A6A0A0;
     height: 30px;
-    padding: 1px 10px;
-    outline: none;
-    margin-top: 7px;
+
+
+    padding: 0 10px;
+
     border-top: none;
     border-left: none;
     border-right: none;
-    border-color: black;
-    
+    border-color: #B4A9A9;
+
+    outline: none;
+    color: #B4A9A9;
 }
 
-.botao{
-    margin-top: 50px;
+.form_login a{
+    margin-bottom: 40px;
+    color: #A6A0A0;
+    text-decoration: none;
 }
 
-.esqueceu_Senha a{
-     color: #A6A0A0;
-     font-size: small;
-     text-decoration: none;
-}
-
-/* RESPONSIVIDADE */
-/* Me de algumas caracteristicas a partir de um tamanho de tela */
-@media screen and (max-width: 768px){
-    .banner_login {
+@media screen and (max-width: 768px) {
+    .logo_banner{
         display: none;
     }
-
-    .section_login {
-        width: 100%;
-    }
 }
-
-
-
-
